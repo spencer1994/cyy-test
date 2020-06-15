@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>游戏设计心理学</title>
+    <meta name="description" content="游戏设计心理学">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/cyy-world/assets/css/0.styles.e76acbc6.css" as="style"><link rel="preload" href="/cyy-world/assets/js/app.61e729af.js" as="script"><link rel="preload" href="/cyy-world/assets/js/2.0ea37f51.js" as="script"><link rel="preload" href="/cyy-world/assets/js/6.69cbdaba.js" as="script"><link rel="prefetch" href="/cyy-world/assets/js/3.4d9dd777.js"><link rel="prefetch" href="/cyy-world/assets/js/4.336de5ec.js"><link rel="prefetch" href="/cyy-world/assets/js/5.2e23640f.js"><link rel="prefetch" href="/cyy-world/assets/js/7.6b68bc2f.js">
+    <link rel="stylesheet" href="/cyy-world/assets/css/0.styles.e76acbc6.css">
+    <style>
+      * {margin: 0; padding: 0;}
+      .input {
+        display: block;
+        margin: 50px auto;
+        width: 400px;
+        height: 40px;
+      }
+      .btn {
+        margin: 0 auto;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 6px;
+        text-align: center;
+        color: #fff;
+        background: steelblue;
+        cursor: pointer;
+      }
+    </style>
+</head>
+
+<body>
+<div id="app">
+  <input placeholder="输入密码" class="input" v-model="pwd" type="password"/>
+  <div class="btn" @click="btnClick()">登陆</div>
+</div>
+</body><script src="/cyy-world/assets/js/app.61e729af.js" defer></script><script src="/cyy-world/assets/js/2.0ea37f51.js" defer></script><script src="/cyy-world/assets/js/6.69cbdaba.js" defer></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.16.0/js/md5.min.js"></script>
+<script type="text/javascript">
+  const vm = new Vue({
+    el:"#app",
+    data: {
+      pwd: ''
+    },
+    methods: {
+      btnClick() {
+        if (md5(this.pwd).toUpperCase() === 'F608C18C833254A0E8D5F40B70D42BB5') {
+          sessionStorage["\x70\x77\x64"] = '\x46\x36\x30\x38\x43\x31\x38\x43\x38\x33\x33\x32\x35\x34\x41\x30\x45\x38\x44\x35\x46\x34\x30\x42\x37\x30\x44\x34\x32\x42\x42\x35'    
+          window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x72\x65\x66"] = '\x2f\x63\x79\x79\x2d\x77\x6f\x72\x6c\x64\x2f\x67\x61\x6d\x65\x2f'
+        }
+      }
+    }
+  })
+</script>
+</html>
+</html>
